@@ -1,2 +1,2 @@
-# wp-cli
+# WP-CLI
 WordPress CLI Tool
