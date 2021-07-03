@@ -58,9 +58,11 @@ isCommand() {
 # check if the first argument passed in looks like a flag
 if [ "$(printf %c "$1")" = '-' ]; then
   set -- /tini -- wp "$@"
+
 # check if the first argument passed in is wp
 elif [ "$1" = 'wp' ]; then
   set -- /tini -- "$@"
+
 # check if the first argument passed in matches a known command
 elif isCommand "$1"; then
   set -- /tini -- wp "$@"
