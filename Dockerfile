@@ -2,7 +2,7 @@ FROM pam79/php-fpm:v7.4.1
 LABEL maintainer="Abdullah Morgan <paapaabdullahm@gmail.com>"
 
 # Add Tini init
-ENV TINI_VERSION v0.18.0
+ENV TINI_VERSION v0.19.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
