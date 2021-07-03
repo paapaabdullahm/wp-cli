@@ -11,12 +11,16 @@ $ export WP_CLI_VERSION="v2.5.0"
 ```
 
 Persist version by appending to /etc/environment
+```sh
 $ echo 'WP_CLI_VERSION="v2.5.0"' | sudo tee -a /etc/environment > /dev/null
+```
 
 Pull image from docker.io
+```sh
 $ docker pull pam79/wp:${WP_CLI_VERSION}
+```
 
-Create a wrapper script with your favourite editor
+Create a wrapper script with your favorite editor
 ```sh
 $ sudo vim /usr/local/bin/wp
 ```

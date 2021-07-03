@@ -20,6 +20,8 @@ RUN apt update && apt install -y bash curl git openssh-server openssl zip unzip;
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh;
 
+RUN chmod +x /docker-entrypoint.sh;
+
 WORKDIR /src
 VOLUME /src
 
